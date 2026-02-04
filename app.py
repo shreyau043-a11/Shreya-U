@@ -1,6 +1,6 @@
 import streamlit as st
 import json
-from classifier import classify_po
+from classifer import classify_po
 
 
 st.set_page_config(page_title="PO Category Classifier", layout="centered")
@@ -22,6 +22,7 @@ if st.button("Classify"):
         except Exception:
             st.error("Invalid model response")
             st.text(result)
+
 
 
 
