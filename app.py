@@ -3,7 +3,7 @@ from typing import Any, Dict
 
 import streamlit as st
 
-from classifier import classify_po
+from classifer import classify_po
 
 
 st.set_page_config(page_title="PO Category Classifier", layout="centered")
@@ -69,6 +69,7 @@ else:
 
 if st.button("Clear history"):
     st.session_state.history = []
+
 
 
 
